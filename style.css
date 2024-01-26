@@ -342,6 +342,21 @@ footer {
 
 /* footer */
 
+/* topへ戻るボタン↓ */
+
+.pagetop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: -75px;
+}
+
+.pagetop img {
+    max-width: 50%;
+}
+
+/* topへ戻るボタン ↑ */
+
 /* アニメーション↓ */
 
 .fadeUpTrigger {

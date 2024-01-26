@@ -41,3 +41,21 @@ $(window).scroll(function () {
 $(window).on('load', function () {
     fadeAnime();/* アニメーション用の関数を呼ぶ*/
 });// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
+
+// topへ戻るボタン JS ↓
+$(document).ready(function() {
+    var pagetop = $('.pagetop');
+    console.log('ここまでいけてます')
+      $(window).scroll(function () {
+         if ($(this).scrollTop() > 100) {
+              pagetop.fadeIn();
+         } else {
+              pagetop.fadeOut();
+              }
+         });
+         pagetop.click(function () {
+             $('body, html').animate({ scrollTop: 0 }, 500);
+                return false;
+     });
+  });
+  // topへ戻るボタン JS ↑
